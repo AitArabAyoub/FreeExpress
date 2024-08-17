@@ -1,0 +1,42 @@
+.App{
+  background-color: #F6F6F6;
+}
+.banner{
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.icons{
+  bottom: 20px;
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+.Product:hover.Product .card img{
+  transition-duration: 0.3s;
+  transform: rotate(1deg) scale(1.1);
+
+}
+.choices{
+  position: absolute;
+  top: 102%;
+  left: 40px;
+  width: calc(100% - 40px);
+  z-index: -1;
+}
+.Search:hover > .choices{
+  position: absolute;
+  z-index: 10;
+}
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
